@@ -7,7 +7,7 @@
 # It can be proven that the lexicographically maximum string that can be obtained is "acb"
 
 class Trie:
-    words = []
+    words = {}
     flag = False
     def insert(self, word: str, idx: int):
         if not word:
@@ -24,3 +24,13 @@ class Trie:
         if not self.words[word[idx] - 'a']:
             return False
         return self.words[word[idx] - 'a'].contains(word, idx + 1)
+ans = []
+freq = {}
+def modifyString(word: str, idx: int):
+    return
+def modifyString(word: str) -> str:
+    for i in word:
+        freq[i]+= 1
+    modifyString(word, 0)
+if __name__ == '__main__':
+    print(modifyString(input()))
