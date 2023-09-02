@@ -6,6 +6,21 @@
 #     "abc" - delete the first occurence of 'a' and the second occurence of 'b'
 # It can be proven that the lexicographically maximum string that can be obtained is "acb"
 
+# class TrieNode:
+#     def __init__(self):
+#         self.children = {}
+#         self.word = False
+# class Trie:
+#     def __init__(self, words):
+#         self.root = TrieNode()
+#         for w in words:
+#             curr = self.root
+#             for c in w:
+#                 if c not in curr.children:
+#                     curr.children[c] = TrieNode()
+#                 curr = curr.children[c]
+#             curr.word = True
+
 class Trie:
     words = {}
     flag = False
