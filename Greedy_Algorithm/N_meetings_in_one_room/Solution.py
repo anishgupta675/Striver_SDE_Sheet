@@ -25,8 +25,8 @@ class Solution:
     
     def compare(a: meeting, b: meeting) -> int:
         if a.getEnd() == b.getEnd():
-            return a.getPos() - b.getPos();
-        return a.getEnd() - b.getEnd();
+            return a.getPos() - b.getPos()
+        return a.getEnd() - b.getEnd()
     
     #Function to find the maximum number of meetings that can
     #be performed in a meeting room.
