@@ -1,11 +1,15 @@
 #User function Template for python3
 
 class Solution:
+
+    def compare(j1: Job, j2: Job):
+        return j2.profit - j1.profit
     
     #Function to find the maximum profit and the number of jobs done.
     def JobScheduling(self,Jobs,n):
         
         # code here
+        sorted(Jobs, key=cmp_to_key(compare))
         max_deadline = 0
         res = [0] * 2
         jobs = [-1] * (n + 1)
