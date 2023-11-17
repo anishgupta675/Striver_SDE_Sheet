@@ -30,7 +30,7 @@ class Solution
     vector<int> JobScheduling(Job arr[], int n) 
     {
         // your code here
-        sort(arr, arr + n, [](Job j1, Job j2) { return j1.profit < j2.profit; });
+        sort(arr, arr + n, [](Job j1, Job j2) { return j2.profit < j1.profit; });
         int max_dead = 0;
         vector<int> res(2, 0);
         vector<int> jobs(n + 1, -1);
