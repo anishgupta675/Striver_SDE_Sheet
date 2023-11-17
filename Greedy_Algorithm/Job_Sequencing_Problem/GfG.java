@@ -48,6 +48,7 @@ class Solution
     int[] JobScheduling(Job arr[], int n)
     {
         // Your code here
+        Arrays.sort(arr, (a, b) -> (b.profit - a.profit));
         int max_deadline = 0;
         int[] res = new int[2];
         int[] jobs = new int[n + 1];
